@@ -7,6 +7,6 @@ spec:
   logStore:
     elasticsearch:
       storage:
-        storageClassName: ibmc-block-gold
+        storageClassName: ocs-storagecluster-ceph-rbd
 
    
