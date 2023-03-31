@@ -4,4 +4,4 @@ metadata:
   name: platform-navigator
 spec:
   storage:
-    class: ibmc-file-gold-gid
+    class: ocs-storagecluster-cephfs
