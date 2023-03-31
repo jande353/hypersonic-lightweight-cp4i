@@ -52,14 +52,21 @@ spec:
           name: native-ha-qm-configmap
           items:
             - mq.ini
-  version: 9.3.1.1-r1
+  version: 9.3.0.1-r1
   pki:
     keys:
-      - name: example
+      - name: default
         secret:
-          secretName: mq-nativeha-internal-tls-secret
+          secretName: mq-external-tls-secret
           items:
             - tls.key
             - tls.crt
+    trust:
+      - name: trust
+        secret:
+          secretName: mq-external-tls-secret
+          items:
+            - tls.crt
+            - ca.crt
   web:
     enabled: true

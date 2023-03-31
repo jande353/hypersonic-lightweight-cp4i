@@ -3,15 +3,21 @@ kind: Kustomization
 
 resources:
  
-
+  - metrics/buildconfig.yaml
+  - metrics/metrics-configuration.yaml
+  - metrics/empty-metrics-credentials.yaml
+  - metrics/mq-metrics-pod.yaml
+  - metrics/podmonitor.yaml
+ 
   # Resources for QM using a self signed cerver certificate.
 
   - native-ha-qm/qm.yaml
   - native-ha-qm/configmap.yaml
   - native-ha-qm/sni-route.yaml
 
-  - native-ha-qm/tls/selfsigned-issuer.yaml
-  - native-ha-qm/tls/selfsigned-nativeha-cert.yaml
+  - native-ha-qm/tls/ca-ss-issuer.yaml
+  - native-ha-qm/tls/nativeha-certificate.yaml
+  - native-ha-qm/tls/queue-manager-certificate.yaml
 
   # Resources for QM using certificate from LetsEncrypt
 

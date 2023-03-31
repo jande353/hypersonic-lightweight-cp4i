@@ -1,18 +1,18 @@
+# Certificate for internal native ha communication
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: mq-server-certificate
+  name: mq-nativeha-internal-tls
 spec:
   secretTemplate:
     annotations:
       cert-utils-operator.redhat-cop.io/generate-cert-info: "true"
-  secretName: mq-server-certificate-secret
+  secretName: mq-nativeha-internal-tls-secret
   duration: 2160h0m0s # 90d
   renewBefore: 360h0m0s # 15d
-  commonName: aro.ceibm.com
   subject:
     organizations:
-      - mq
+      - 'mqss'
   privateKey:
     algorithm: RSA
     encoding: PKCS1
@@ -23,8 +23,8 @@ spec:
     - server auth
     - client auth
   dnsNames:
-    - 'wellknown-cert-qm-ibm-mq-qm-cp4i.apps.jn8qaoym.eastus.aroapp.io'
-    - 'aro.ceibm.com'
+    - '*.cp4i.svc'
+    - '*.cp4i.svc.local'
+    - '*.cp4i.svc.local.cluster'
   issuerRef:
-    name: letsencrypt-cluster-issuer
-    kind: ClusterIssuer
+    name: mq-selfsigned-issuer
