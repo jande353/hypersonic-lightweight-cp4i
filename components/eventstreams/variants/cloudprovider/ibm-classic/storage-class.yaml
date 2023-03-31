@@ -7,7 +7,7 @@ spec:
   strimziOverrides:
     kafka:
       storage:
-        class: ibmc-block-gold
+        class: ocs-storagecluster-ceph-rbd
     zookeeper:
       storage:
-        class: ibmc-block-gold
+        class: ocs-storagecluster-ceph-rbd
