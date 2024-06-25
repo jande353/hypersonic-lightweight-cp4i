@@ -22,8 +22,8 @@ spec:
       - name: mq-topic-api
   share:
     apim:
-      providerOrg: providerorg
-      catalog: sandbox
+      providerOrg: epical
+      catalog: epical-dev
 ---
 apiVersion: apiconnect.ibm.com/v1beta1
 kind: API
