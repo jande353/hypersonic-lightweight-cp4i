@@ -30,5 +30,5 @@ spec:
           type: NoOp
   share:
     apim:
-      providerOrg: providerorg
-      catalog: production-catalog
+      providerOrg: epical
+      catalog: epical-dev
