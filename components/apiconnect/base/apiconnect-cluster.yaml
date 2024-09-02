@@ -3,7 +3,6 @@ kind: APIConnectCluster
 metadata:
   name: apic-cluster
   annotations: 
-    apiconnect-operator/backups-not-configured: "true"
   labels:
     app.kubernetes.io/instance: apiconnect
     app.kubernetes.io/managed-by: ibm-apiconnect
