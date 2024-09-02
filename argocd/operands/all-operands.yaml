@@ -64,7 +64,7 @@ spec:
         namespace: '{{namespace}}'
       syncPolicy:
         automated:
-          selfHeal: false
+          selfHeal: true
       ignoreDifferences:
           
       # App Connect operator adds xxx-adminssl Configuration which is not in our 
