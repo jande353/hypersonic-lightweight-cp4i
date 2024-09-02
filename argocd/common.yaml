@@ -14,7 +14,4 @@ spec:
   project: default
   source:
     path: ./components/common/base
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: false
+  syncPolicy: {}
