@@ -4,4 +4,4 @@ metadata:
   name: dashboard
 spec:
   storage:
-    class: ibmc-vpc-block-10iops-tier
+    class: ibmc-vpc-file-dp2
