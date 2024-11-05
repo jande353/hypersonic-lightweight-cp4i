@@ -19,4 +19,4 @@ spec:
     license: L-XRNH-47FJAW
     use: CloudPakForIntegrationNonProduction
   replicas: 1
-  version: '12.0'
+  version: '13.0'
