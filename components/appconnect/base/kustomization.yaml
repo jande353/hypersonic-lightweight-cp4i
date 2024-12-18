@@ -5,7 +5,7 @@ resources:
   - dashboard.yaml
   #- designer.yaml
 
-  - integrationruntime.yaml
+  #- integrationruntime.yaml
   - emptyuser-configuration.yaml
   - serverconf
   - sample-configmap.yaml
