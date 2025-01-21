@@ -26,7 +26,7 @@ spec:
   storage:
     size: 5Gi
     type: persistent-claim
-    class: PATCHED_BY_KUSTOMIZE
+    class: ibmc-vpc-file-dp2
   replicas: 1
   version: 13.0.1.1-r1
   displayMode: IntegrationRuntimes
