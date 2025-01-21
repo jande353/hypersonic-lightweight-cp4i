@@ -1,0 +1,6 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: Dashboard
+metadata:
+  name: dashboard
+spec:
+  storageClassName: ibmc-vpc-block-10iops-tier
