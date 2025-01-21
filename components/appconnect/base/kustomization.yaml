@@ -6,7 +6,7 @@ resources:
   #- designer.yaml
 
   #- integrationruntime.yaml
-  #- emptyuser-configuration.yaml
-  #- serverconf
-  #- sample-configmap.yaml
+  - emptyuser-configuration.yaml
+  - serverconf
+  - sample-configmap.yaml
   #- hpa.yaml
