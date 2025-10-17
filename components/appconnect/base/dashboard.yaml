@@ -26,7 +26,7 @@ spec:
   storage:
     size: 5Gi
     type: persistent-claim
-    class: ibmc-vpc-file-dp2
+    class: ibmc-vpc-file-eit
   replicas: 1
   version: 13.0.4.2-r1
   displayMode: IntegrationRuntimes
