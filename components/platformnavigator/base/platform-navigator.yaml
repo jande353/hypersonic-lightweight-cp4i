@@ -9,4 +9,4 @@ spec:
     accept: true
     license: L-CYPF-CRPF3H
   replicas: 1
-  version: 16.1.2.3
+  version: 16.1.2.4
